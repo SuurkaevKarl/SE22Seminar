@@ -1,0 +1,66 @@
+:root { /*Variables that allow reusing values; name must begin with --*/
+    --textColor: rgb(45, 45, 45);
+    --titleColor: rgb(47, 47, 65);
+}
+
+body { /*These apply for the whole page*/
+    background-color: lightcyan;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    max-width: 20%;
+}
+
+p, li, ul, td { /*Values for all non-header texts*/
+    color: var(--textColor);
+}
+
+h1, h2, h3, h4, h5, h6 { /*Values for all headers*/
+    color: var(--titleColor);
+    text-shadow: 2px 2px #a48cc0;
+}
+
+td, th { /*Values for table elements (text style changed above)*/
+    color: var(--titleColor);
+    border: 1px dotted
+}
+
+table { /*Values for the table element itself*/
+    color: var(--titleColor);
+    border: 3px solid;
+    padding: 1px;
+    margin: 1px;
+}
+
+#pageTitle, th { /*Values for page title and table column titles*/
+    color: var(--titleColor);
+    text-align: center;
+}
+
+#aboutLink {
+    align-content: center;
+    text-align: center;
+    display: block;
+}
+
+.contentBlock { /*Values for general content blocks of page*/
+    border: 3px solid rgb(73, 73, 99);
+    border-radius: 15px;
+    background-color: lightblue;
+
+    width: 80%;
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: -10%;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: center;
+    display: block;
+}
+
+.aboutDiv {
+    width: 80%;
+    align-self: center;
+}
